@@ -1,0 +1,6 @@
+<h1>Payment Results</h1>
+
+<p>
+  A loan of <%= number_to_currency(@principal) %> over <%= @years %> years at an annual rate of <%= number_with_precision(@apr, precision: 4) %>% 
+  results in a monthly payment of <%= number_to_currency(@payment.round(2)) %>.
+</p>
